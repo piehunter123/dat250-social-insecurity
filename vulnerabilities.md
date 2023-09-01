@@ -5,6 +5,7 @@ Injection vulnerabilities:
 File upload validation:
 - No file size limit.
 - No file type filter.
+- No file name validation. Posting new file with the same name overwrites old file.
 
 No rate limiting on login, uploading.
 - Credentials can be brute forced.
@@ -30,3 +31,6 @@ Insufficient logging:
 
 Plain text database:
 - Sensitive data is readily available in plain text.
+
+Broken authentication:
+- No password requirements.
